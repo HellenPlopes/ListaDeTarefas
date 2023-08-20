@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?família=Fraunces:opsz,wght@9.. 144.300&family=Jacques+Francois&family=Kdam+Thmor+Pro&family=Quicksand&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+
+body{
+    background-image: url(./img/wp4676582-4k-pc-wallpapers.jpg);
+    background-size: cover;
+}
+
+.container{
+    background-color: rgb(252, 252, 252);
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 100px auto 0;
+    opacity: 95%;
+}
+
+.input-task{
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    background-color: rgb(196, 196, 196);
+}
+
+.button-taks{
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    font-size: 17px;
+    padding: 0 15px;
+    float: right;
+    cursor: pointer;
+}
+
+.button-taks:hover{
+    opacity: 0.8;
+}
+
+.button-taks:active{
+    opacity: 0.6;
+}
+
+.list-taks{
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.taks{
+    background-color: rgb(196, 196, 196);
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+
+img{
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.taks:hover img{
+    opacity: 1;
+    
+}
+
+.done{
+    background-color: rgb(74, 145, 74);
+    text-decoration: line-through;
+}
+
+
+@media screen and (max-width: 730px) {
+    body {
+      background-size: auto;
+      background-repeat:no-repeat;
+    
+    }
+  }
+
